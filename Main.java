@@ -10,7 +10,7 @@ public class Main {
         double[] x = new double[15];
         double min = -10.0, max = 6.0;
         for (int i = 0; i < x.length; i++) {
-            x[i] = min + random() * (max - min);
+            x[i] = round((min + random() * (max - min))*a)/a;
         }
         double[][] r = new double[13][15];
         Set<Integer> set = Set.of(6, 7, 11, 12, 13, 15);
